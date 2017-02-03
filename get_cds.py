@@ -22,9 +22,6 @@ with open(sys.argv[1]) as fh:
         print ">" + gene_name, strand, vec_pos
         if strand == "+":
             print cds_seq
-            #print ">" + gene_name+"_pep", strand, vec_pos
-            #print Seq(cds_seq).translate()
         else:
             print Seq(cds_seq).reverse_complement()
-            #print ">" + gene_name+"_pep", strand, vec_pos
-            #print Seq(cds_seq).reverse_complement().translate()
+
